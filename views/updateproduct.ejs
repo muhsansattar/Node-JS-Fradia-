@@ -1,0 +1,39 @@
+<%- include("header"); -%>
+
+
+<div class="container">
+<div class="row">
+<div class="col-md-4">
+<h2>Update Product</h2>
+      <form action="/updateproduct" method="post">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" id="name" name="name">
+        </div>
+        <div class="form-group">
+          <label for="price">Price:</label>
+          <input type="number" class="form-control" id="price" name="price">
+        </div>
+        <div class="form-group">
+          <label for="size">Size:</label>
+          <input type="text" class="form-control" id="size" name="size">
+        </div>
+        <div class="form-group">
+          <label for="category">Category:</label>
+          <input type="text" class="form-control" id="category" name="category">
+        </div>
+        <div class="form-group">
+          <label for="image">Image URL:</label>
+          <input type="text" class="form-control" id="image" name="image">
+        </div>
+        <div class="form-group">
+          <label for="name">ProductID:</label>
+          <input type="text" class="form-control" id="id" name="id">
+        </div>
+        <button type="submit" class="btn btn-primary">Update Product</button>
+      </form>
+
+
+    </div>
+    </div>
+    </div>

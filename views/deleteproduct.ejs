@@ -1,0 +1,21 @@
+<%- include("header"); -%>
+
+
+<div class="container">
+  
+    <div class="row">
+    <div class="col-md-4"> 
+    <h2>Delete Product</h2>
+   
+    <form action="/deleteproduct" method="post">
+      <div class="form-group">
+      
+        <label for="name">ProductID:</label>
+        <input type="text" class="form-control" id="id" name="id">
+
+        </div>
+        <button type="submit" class="btn btn-danger">Delete Product</button>
+        </form>
+    </div>
+    </div>
+</div> 

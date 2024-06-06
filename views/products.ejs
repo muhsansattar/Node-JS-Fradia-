@@ -1,0 +1,48 @@
+<%- include("header"); -%>
+      
+ <!-- featured section -->
+   
+ <div class="container">
+    <h1>Products</h1>
+    <form action="/products?category=Insecticides" method="post">
+
+        <div class="btn-group mb-4 d-flex justify-content-center" role="group" aria-label="Categories">
+            <button type="button" class="btn btn-success category-btn mx-3" data-category="Insecticides">Insecticides</button>
+            <button type="button" class="btn btn-success category-btn mx-3" data-category="Herbicides">Herbicides</button>
+            <button type="button" class="btn btn-success category-btn mx-3" data-category="Fungicides">Fungicides</button>
+            <button type="button" class="btn btn-success category-btn mx-3" data-category="Micronutrients">Micronutrients</button>
+            <button type="button" class="btn btn-success category-btn mx-3" data-category="GRANULES">GRANULES</button>
+          </div>
+          
+          
+    </form>
+
+
+<!-- products section -->
+<div id="product-list" class="row">
+<% productArray.forEach(function(product){ %>
+<div class="col-md-6">
+  <div class="card mb-3 shadow p-3 mb-5 bg-white rounded" style="padding-top: 10px ; padding-bottom: 10px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="<%= product.image %>" class="card-img-top" style="width: 80%; height: 150px;" alt="<%= product.name %>">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title text-success"><%= product.name %></h5>
+          <p class="card-text "><span class="font-weight-bold" >Size</span> <%= product.size ? product.size : 'N/A' %></p>
+          <p class="card-text "><span class="font-weight-bold" >Price RS : </span><%= product.price ? product.price.toFixed(2) : 'N/A' %></p>
+          <p class="card-text font-weight-light" > ProductID : <%= product._id %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<% }); %>
+</div>
+</div>
+
+
+
+
+<%- include("footer"); -%>

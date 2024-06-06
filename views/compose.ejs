@@ -1,0 +1,36 @@
+ <%- include("header"); -%>
+
+
+
+ <div class="container justify-content">
+
+  <h1>Compose Page</h1>
+  <div class=" col-lg-4" style=" display: inline;" >
+  <form action="/compose" method="POST">
+    <input type="hidden" name="action" value="addproduct">
+    <button type="submit" class="btn btn-primary">Add Product</button>
+  </form>
+</div>
+<div class=" col-lg-4" style=" display: inline;" >  <form action="/compose" method="POST">
+    <input type="hidden" name="action" value="deleteproduct">
+    <button type="submit" class="btn btn-danger">Delete Product</button>
+  </form>
+</div>
+<div class=" col-lg-4" style=" display: inline;" >
+  <form action="/compose" method="POST">
+    <input type="hidden" name="action" value="updateproduct">
+    <button type="submit" class="btn btn-warning">Update Product</button>
+  </form>
+</div>
+</div>
+
+<script>$(window).on("beforeunload", function() {
+  $.ajax({
+    type: "POST",
+    url: "/logout", // your logout route
+    async: false, // make it synchronous to ensure the request completes before the page closes
+  });
+});
+</script>
+
+<%- include("footer"); -%>

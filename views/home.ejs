@@ -1,0 +1,70 @@
+
+<%- include("header"); -%>
+      
+
+<div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+          aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner" id="carousel">
+      <div class="carousel-item active">
+          <img src="media/slider1.jpg" width="100%" height="400px" alt="">
+          <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>FAREDIA SAPRAY CENTER</h1>
+                <p>Re-Sharing Agriculture</p>
+                  <p><a class="btn btn-lg btn-warning" href="/products"> Our PRODUCTS</a></p>
+              </div>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <img src="media/slider2.jpg" width="100%" height="400px" alt="">
+          <div class="container">
+              <div class="carousel-caption">
+                  <h1>FAREDIA SAPRAY CENTER</h1>
+                  <p>Re-Sharing Agriculture</p>
+                  <p><a class="btn btn-lg btn-danger" href="/products"> Our PRODUCTS</a></p>
+              </div>
+          </div>
+      </div>
+      <div class="carousel-item ">
+          <img src="media/slider3.jpeg" width="100%" height="400px" alt="">
+          <div class="container">
+              <div class="carousel-caption text-end">
+                <h1>FAREDIA SAPRAY CENTER</h1>
+                <p>Re-Sharing Agriculture</p>
+                  <p><a class="btn btn-lg btn-primary" href="/products"> Our PRODUCTS</a></p>
+              </div>
+          </div>
+      </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<div class="px-4 py-5 my-5 text-center">
+
+  <h1 class="display-5 fw-bold">About <span class="us">Us</span></h1>
+  <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s
+          most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system,
+          extensive prebuilt components, and powerful JavaScript plugins...</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <a href="/about"> <button type="button" href="about.html"
+                  class="btn btn-success btn-lg px-4 gap-3">READ MORE >></button></a>
+      </div>
+  </div>
+</div>
+
+
+<%- include("footer"); -%>
